@@ -8,7 +8,7 @@
      int _day;
 
  public:
-     date(int year, int month=0, int day=0) : _year(year)
+     date(int year, int month, int day):_year(year),_month(month)
                                           
                                           
      {
@@ -20,7 +20,8 @@
      }
  };
  int main() {
-     date d(100);
+     date d(100,100,100);
      d.Print();
      return 0;
  } 
+ //在初始化列表后面有赋值的时候，会赋值，没有的话会调用声明的时候的缺省值，要是没有声明，就是随机值。
