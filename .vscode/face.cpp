@@ -3,24 +3,21 @@
  class date
  {
  private:
-     int _year = 10;
-     int _month=100;
-     int _day;
+     const int _a;
 
  public:
-     date(int year, int month, int day):_year(year),_month(month)
-                                          
-                                          
+     date(int a = 10): _a(a)
+
      {
      }
      void Print() const
      {
-          cout << _year << "-" << _month << "-" << _day << endl;
+          cout << _a<< "-"<< endl;
          
      }
  };
  int main() {
-     date d(100,100,100);
+     date d;
      d.Print();
      return 0;
  } 
